@@ -13,20 +13,23 @@ application/config.php - Set link app
 `$config['base_url'] = 'http://localhost/weather-forecast/';`
 
 ***
-### 3. App code documentation
-application/controllers/Forecast.php - App controllers
+### 3. Controller
+application/controllers/Forecast.php - App controller
 
-Homepage
+Homepage controller
 
-`public function index()
+```
+public function index()
 	{
 		$data['title'] = "Home";
 		$this->load->view('forecast', $data);
-	}`
+	}
+```
 
-Result page
+Result page controller
 
-`public function forecasting()
+```
+public function forecasting()
 	{
 		if(!empty($_POST['city'])) {
 			$data['current_weather'] = $this->M_Forecast->current_weather($_POST['city']);
@@ -38,4 +41,41 @@ Result page
 		
 		$data['title'] = "Result";
         $this->load->view('weacast', $data);
-	}`
+	}
+```
+
+***
+### 4. Model
+application/models/M_Forecast.php - App model
+
+Get data Current Weather (Left side)
+
+```
+function current_weather($city)
+    {
+		 //get JSON
+		 $json = file_get_contents("http://api.openweathermap.org/data/2.5/weather?appid=770a17f9520e41124656aa601bc34b3c&units=metric&q=$city", false);
+
+		 //decode JSON to array
+		 $data = json_decode($json,true);
+		 
+		 //return data array()
+		 return $data;
+    }
+```
+
+Get data Forecast (Right side)
+
+```
+function forecast_weather($city)
+    {
+		 //get JSON
+		 $json = file_get_contents("http://api.openweathermap.org/data/2.5/forecast/daily?appid=770a17f9520e41124656aa601bc34b3c&units=metric&q=$city&cnt=7", false);
+
+		 //decode JSON to array
+		 $data = json_decode($json,true);
+		 
+		 //return data array()
+		 return $data;
+    }
+```
