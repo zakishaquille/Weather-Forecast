@@ -1,4 +1,9 @@
 # WeaCast - Weather Forecast
+WeaCast is a web application about forecasting weather, climate, etc. This app is built with codeigniter and an weather API(OpenWeatherMap).
+
+For more info about the API you can check here [OpenWeatherMap API](http://openweathermap.org/api)
+
+***
 ### 1. Demo Apps
 Homepage
 ![homepage](https://s27.postimg.org/vvdibdlur/download.png)
