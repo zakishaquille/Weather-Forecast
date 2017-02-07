@@ -9,7 +9,7 @@ For more info about the API you can check here [OpenWeatherMap API](http://openw
 * Put in htdocs
 * Turn on your web server(ex: xampp,wampp)
 * Config base url [configuration base_url](https://github.com/zakishaquille/weather_forecast#2-configuration) (if needed)
-* Run in browser "localhost/weather-forecast/"
+* Run in browser "localhost/weather-forecast/" (follow your configuration)
 
 Homepage
 ![homepage](https://s27.postimg.org/vvdibdlur/download.png)
