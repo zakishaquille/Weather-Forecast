@@ -5,6 +5,12 @@ For more info about the API you can check here [OpenWeatherMap API](http://openw
 
 ***
 ### 1. Demo Apps
+* Clone/download this repo
+* Put in htdocs
+* Turn on your web server(ex: xampp,wampp)
+* Config base url [configuration base_url](https://github.com/zakishaquille/weather_forecast#2-configuration) (if needed)
+* Run in browser "localhost/weather-forecast/"
+
 Homepage
 ![homepage](https://s27.postimg.org/vvdibdlur/download.png)
 
