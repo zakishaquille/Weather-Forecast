@@ -12,7 +12,7 @@ For more info about the API you can check here [OpenWeatherMap API](http://openw
 * Run in browser "localhost/weather-forecast/" (follow your configuration)
 
 Homepage
-![homepage](https://s27.postimg.org/vvdibdlur/download.png)
+![homepage](https://serving.photos.photobox.com/18503908fea383f823afb57b9a81892f3b87a21b98b44a7990059f5640b6817ef9893f5e.jpg)
 
 Result page
 ![result](https://s29.postimg.org/nro33ew3b/Wea_Cast_Result.png)
